@@ -1,9 +1,9 @@
-# Device tree for Xiaomi Redmi Note 7 (codenamed _"lavender"_)
+# Device tree for Mi 8 Lite (codenamed _"Platina"_)
 
 ==================================
 ## Device specifications
 
-| Device                  | Xiaomi Redmi Note 7                                         |
+| Device                  | Xiaomi Mi 8 Lite                                           |
 | ----------------------- | :---------------------------------------------------------- |
 | SoC                     | Qualcomm SDM660 Snapdragon 660                              |
 | CPU                     | 4x2.2 GHz Kryo 260 & 4x1.8 GHz Kryo                         |
