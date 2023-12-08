@@ -1,0 +1,12 @@
+ro.product.brand=xiaomi
+ro.product.name=platina
+ro.product.device=platina
+ro.product.mod_device=platina_global
+ro.build.product=platina
+sys.usb.controller=a800000.dwc3
+sys.usb.rndis.func.name=rndis_bam
+sys.usb.rmnet.func.name=rmnet_bam
+ro.hardware.keystore=sdm660
+ro.product.board=sdm660
+ro.board.platform=sdm660
+#
