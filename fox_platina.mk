@@ -20,7 +20,8 @@
 
 # OrangeFox-specific settings #
 
-OF_SCREEN_H := 2340
+OF_MAINTAINER := itisFarzin
+OF_SCREEN_H := 2280
 OF_STATUS_H := 80
 OF_STATUS_INDENT_LEFT := 48
 OF_STATUS_INDENT_RIGHT := 48
@@ -34,9 +35,6 @@ OF_SKIP_MULTIUSER_FOLDERS_BACKUP := 1
 OF_UNBIND_SDCARD_F2FS := 1
 
 OF_QUICK_BACKUP_LIST := /boot;/data;/system_image;/vendor_image;
-
-# patch avb20 - some ROM recoveries try to overwrite custom recoveries
-OF_PATCH_AVB20 := 1
 
 # no additional check for MIUI props
 OF_NO_ADDITIONAL_MIUI_PROPS_CHECK := 1
