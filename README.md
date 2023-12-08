@@ -15,7 +15,7 @@
 | Battery                 | Non-removable Li-Po 3350 mAh                                |
 | Dimensions              | 156.4 x 75.8 x 7.5 mm                                       |
 | Display                 | 2280 x 1080 (19:9), 6.26 inch                               |
-| Rear camera 1           | 12MP, f/1.9 Dual LED flash                                  |
+| Rear camera             | 12MP, f/1.9 Dual LED flash                                  |
 | Front camera            | 24MP, 4 in 1, 1.8µm                                         |
 
 ## Device Picture
