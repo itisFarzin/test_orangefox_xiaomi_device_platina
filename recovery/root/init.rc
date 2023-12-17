@@ -23,7 +23,7 @@ on early-init
 
     start ueventd
 
-service set_permissive /sbin/permissive.sh
+service set_permissive /system/bin/permissive.sh
     oneshot
     seclabel u:r:recovery:s0
 
@@ -102,11 +102,11 @@ on late-init
 on property:sys.powerctl=*
    powerctl ${sys.powerctl}
 
-service ueventd /sbin/ueventd
+service ueventd /system/bin/ueventd
     critical
     seclabel u:r:ueventd:s0
 
-service adbd /sbin/adbd --root_seclabel=u:r:su:s0 --device_banner=recovery
+service adbd /system/bin/adbd --root_seclabel=u:r:su:s0 --device_banner=recovery
     disabled
     socket adbd stream 660 system system
     seclabel u:r:adbd:s0
