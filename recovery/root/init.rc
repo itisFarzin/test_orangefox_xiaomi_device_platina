@@ -1,10 +1,9 @@
-import /init.recovery.usb.rc
-import /init.recovery.mksh.rc
 import /init.recovery.logd.rc
+import /init.recovery.ldconfig.rc
+import /init.recovery.mksh.rc
+import /init.recovery.usb.rc
 import /init.recovery.service.rc
-import /init.recovery.hlthchrg.rc
-import /init.recovery.vold_decrypt.keymaster-3-0.rc
-import /init.recovery.vold_decrypt.servicemanager.rc
+import /init.recovery.vold_decrypt.rc
 import /init.recovery.${ro.hardware}.rc
 
 on early-init
@@ -24,7 +23,7 @@ on early-init
 
     start ueventd
 
-service set_permissive /system/bin/permissive.sh
+service set_permissive /sbin/permissive.sh
     oneshot
     seclabel u:r:recovery:s0
 
@@ -55,7 +54,6 @@ on fs
     mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
 
 on boot
-    start health-hal-2-1
     ifup lo
     hostname localhost
     domainname localdomain
@@ -104,11 +102,11 @@ on late-init
 on property:sys.powerctl=*
    powerctl ${sys.powerctl}
 
-service ueventd /system/bin/ueventd
+service ueventd /sbin/ueventd
     critical
     seclabel u:r:ueventd:s0
 
-service adbd /system/bin/adbd --root_seclabel=u:r:su:s0 --device_banner=recovery
+service adbd /sbin/adbd --root_seclabel=u:r:su:s0 --device_banner=recovery
     disabled
     socket adbd stream 660 system system
     seclabel u:r:adbd:s0
