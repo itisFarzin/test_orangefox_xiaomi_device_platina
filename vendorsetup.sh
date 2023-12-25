@@ -17,7 +17,7 @@
 # 	
 # 	Please maintain this if you use this script or any part of it
 #
-export FOX_ENABLE_APP_MANAGER=1
+export FOX_USE_DATA_RECOVERY_FOR_SETTINGS=1
 export FOX_USE_BASH_SHELL=1
 export FOX_ASH_IS_BASH=1
 export FOX_USE_NANO_EDITOR=1

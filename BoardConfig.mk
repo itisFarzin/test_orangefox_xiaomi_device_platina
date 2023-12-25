@@ -59,7 +59,6 @@ BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3 ehci-hcd.park=3 l
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 msm_rtb.filter=0x37 printk.devkmsg=on
 BOARD_KERNEL_CMDLINE += sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1
 BOARD_KERNEL_CMDLINE += usbcore.autosuspend=7 user_debug=31
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 BOARD_BOOTIMG_HEADER_VERSION := 1
@@ -68,6 +67,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 KERNEL_DIRECTORY := $(DEVICE_PATH)/prebuilt
+
 ifeq ($(FOX_BUILD_FULL_KERNEL_SOURCES),1)
   TARGET_KERNEL_SOURCE := kernel/xiaomi/platina
   TARGET_KERNEL_CONFIG := platina-fox_defconfig
